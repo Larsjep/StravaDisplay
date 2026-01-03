@@ -16,9 +16,12 @@ void setup() {
   tft.fillCircle(120, 120, 60, TFT_GREEN);
   tft.fillCircle(120, 120, 20, TFT_RED);
 
-  tft.setTextColor(TFT_WHITE, TFT_BLUE);
+  //tft.setTextColor(TFT_WHITE, TFT_BLUE);
+  tft.setTextColor(TFT_BLACK);
+  //tft.setFreeFont(TFT_F);
+  tft.setTextSize(2);
   tft.setTextDatum(MC_DATUM);
-  tft.drawString("Hello!", 120, 120, 4);
+  tft.drawString("Hello!", 120, 120);
 }
 
 void loop() {
